@@ -1,0 +1,14 @@
+jupyter==1.0.0
+pandas==2.0.1
+numpy==1.23.5
+matplotlib==3.7.1
+seaborn==0.12.2
+mesa==1.1.1
+agentpy==0.1.5
+ipympl==0.9.3
+ta==0.10.2
+coinbasepro==0.4.1
+backtesting==0.3.3
+vectorbt==0.25.3
+yfinance==0.2.40
+openai==0.28.0
