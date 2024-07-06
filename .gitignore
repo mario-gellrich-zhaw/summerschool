@@ -15,7 +15,7 @@ wifi_access.txt
 
 # Ignore results .ipynb files
 # Agent_Based_Credit_Risk_Modeling/agent_based_model_credit_risk.ipynb
-Trading_Bot/trading_bot.ipynb
+# Trading_Bot/trading_bot.ipynb
 
 # Ignore credentials
 # Trading_Bot/credentials.json
