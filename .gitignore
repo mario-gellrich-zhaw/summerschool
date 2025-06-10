@@ -22,5 +22,15 @@ participants.xlsx
 # Credentials
 credentials.json
 
-# Session content
-2025_Summer_Session_Themes_GELL.xlsx
+# Application - related files
+# app.py
+app_step_02.py
+app_step_03.py
+app_step_04.py
+
+# index.html
+index_step_02.html
+index_step_03.html
+index_step_04.html
+questions.html
+data.html
