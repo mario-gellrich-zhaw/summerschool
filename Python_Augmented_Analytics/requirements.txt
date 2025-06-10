@@ -8,6 +8,4 @@ statsmodels==0.14.4
 scikit-learn==1.6.1
 seaborn==0.13.2
 torch==2.6.0
-mesa==1.1.1
-agentpy==0.1.5
-ipympl==0.9.3
+seaborn==0.13.2

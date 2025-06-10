@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Overview</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="sidebar">
+        <a href="/" title="Home">
+            <i class="fas fa-home" style="font-size: 1.0em;"></i>
+        </a>
+        <a href="/data">Data</a>
+        <a href="/questions">Example Questions</a>
+    </div>
+    <div class="main-content">
+        <h1>Ask gpt-3.5-turbo questions about the data!</h1>
+
+        <form method="POST" action="/">
+            <label for="prompt">Enter your prompt:</label><br>
+            <textarea name="prompt" id="prompt" rows="8">{{ prompt or '' }}</textarea><br><br>
+            <button type="submit" class="button">Submit</button>
+        </form>
+
+        {% if gpt_response %}
+            <hr>
+            <h2>GPT Response</h2>
+            <pre>{{ gpt_response }}</pre>
+        {% endif %}
+
+        {% if code_to_execute %}
+            <hr>
+            <h2>Extracted Python Code</h2>
+            <pre>{{ code_to_execute }}</pre>
+        {% endif %}
+
+        {% if execution_result %}
+            <hr>
+            <h2>Execution Output</h2>
+            <pre>{{ execution_result }}</pre>
+        {% endif %}
+
+        {% if show_graphic %}
+            <hr>
+            <img src="{{ url_for('static', filename='graphic.png') }}" 
+                 alt="Generated Graphic" style="max-width: 600px;">
+        {% endif %}
+    </div>
+
+    <script>
+        document.getElementById('prompt').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter' && !event.shiftKey) {
+                event.preventDefault();
+                this.form.submit();
+            }
+        });
+    </script>
+</body>
+</html>
