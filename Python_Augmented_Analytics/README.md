@@ -55,7 +55,7 @@ python app_step_01.py
 - Backend: Discuss the required functionality of app.py in your team.
 - Data: Examine the file autoscout24_data.csv.
 - OpenAI API-key: Ensure credentials.json is available and contains a valid API-key.
-  - An API-key is available on the course days (Week 11 & Week 12) on Moodle.
+  - An API-key will be made available on the course days.
     (use the API-key only on GitHub Codespaces, do not make it public on GitHub)
 
 ```bash
