@@ -15,6 +15,7 @@ wifi_access.txt
 
 # Ignore results .ipynb files
 # Agent_Based_Credit_Risk_Modeling/agent_based_model_credit_risk.ipynb
+multi-agent_augmented_analytics_example.ipynb
 
 # Ignore participants.xlsx
 participants.xlsx
