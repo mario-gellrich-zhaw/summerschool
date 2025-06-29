@@ -29,5 +29,5 @@
         }
     },
 
-    "postCreateCommand": "pip install -r requirements.txt"
+    "postCreateCommand": "chmod +x .devcontainer/setup.sh && bash .devcontainer/setup.sh && pip install -r requirements.txt"
 }
