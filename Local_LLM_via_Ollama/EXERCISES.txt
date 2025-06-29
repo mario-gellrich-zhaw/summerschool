@@ -1,0 +1,60 @@
+ _______   _______  ___________  _____ _____ _____ _____ _____ 
+|  ___\ \ / /  __ \|  ___| ___ \/  __ \_   _/  ___|  ___/  ___|
+| |__  \ V /| /  \/| |__ | |_/ /| /  \/ | | \ `--.| |__ \ `--. 
+|  __| /   \| |    |  __||    / | |     | |  `--. \  __| `--. \
+| |___/ /^\ \ \__/\| |___| |\ \ | \__/\_| |_/\__/ / |___/\__/ /
+\____/\/   \/\____/\____/\_| \_| \____/\___/\____/\____/\____/ 
+
+#----------------------------------------------------------------------
+# Ollama and LLMs
+#----------------------------------------------------------------------
+
+1.) Make sure the machine type of your GitHub Codespaces environment is >= 16GB.
+
+    --> if not, you can change it before you start your GitHub Codespace 
+        --> go to your Codespaces overview and click on the right side on '...'
+            --> click on 'Change machine type' and select a larger machine type  
+
+2.) Open a new VS Code Terminal and start the Ollama server (Keep the Terminal open!):
+
+    ollama serve
+    
+3.) Open a second VS Code Terminal and list all available LLMs (this should be empty):
+
+    ollama list
+
+4.) To import an LLM like Llama3.2 (# parameters: 3B, size: 2GB), type:
+    
+    ollama run llama3.2:latest
+
+5.) Test the model in the VS Code Terminal by asking questions.
+
+6.) Quit the model:
+
+    /bye
+
+7.) Find running ollama processes:
+   
+    ps aux | grep ollama
+
+8.) To stop all running ollama processes, type:
+   
+    pkill -f ollama
+
+#----------------------------------------------------------------------
+# Ollama, LLMs & Python
+#----------------------------------------------------------------------
+
+1.) Start the Ollama server again in a Terminal (Keep the Terminal open!).
+
+    ollama serve
+
+2.) Run the Jupyter notebook 'ollama_llms.ipynb' step by step.
+
+3.) Try to execute the generated code.
+
+4.) If it does not work, modify the code (e.g. using GitHub Copilot) until it works.
+
+5.) Change the LLM and check the performance and quality of the response.
+
+6.) Does it work well? Any issues?
