@@ -18,7 +18,7 @@ Focused on single-agent analytic workflows:
 - `tiny_llm_next_word_prediction.ipynb`: Notebook for LLM-based prediction
 
 ### 📁 Python_Multi-Agent_Augmented_Analytics
-Contains multi-agent augmented analytics:
+Contains a multi-agent augmented analytics example:
 - 📁 `data`: includes `autoscout24_data.csv`
 
 ### 📁 Agent_Based_Credit_Risk_Modeling
