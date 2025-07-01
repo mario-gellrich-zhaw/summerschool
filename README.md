@@ -92,7 +92,6 @@ This structure allows participants to navigate easily between course materials, 
    pkill -f ollama
    ```
 
-
 ## Sync Origin with Upstream
 
 ```bash
