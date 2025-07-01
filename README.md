@@ -12,14 +12,36 @@ Hands-on exploration with local LLMs using the Ollama framework:
 
 ### 📁 Python_Single-Agent_Augmented_Analytics
 Focused on single-agent analytic workflows:
-- `app.py`: Main application script
-- `Slides_*.pdf`: Presentation slides
-- 📁 `data`: includes `global-shark-attack.csv`
-- 📁 `static`, `templates`: Supporting folders
+
+**Minimal project structure:**
+
+```bash
+project/
+│
+├── .devcontainer/
+│    └── devcontainer.json       → Configuration file for setting up the Dev Container
+│
+├── app.py                       → The main app file
+├── Procfile                     → Configuration file for deployment (e.g. on Koyeb)
+├── data/
+│   ├── global-shark-attack.csv  → .csv file with car data
+│   └── credentials.json         → JSON file storing the OpenAI API key
+│
+├── static/
+│   ├── css/
+|   |    └── styles.css          → File to define styles (CSS) in HTML pages
+|   └── graphic.png              → graphic.png (placeholder, will dynamically be overwritten)
+│   
+├── templates/
+│   └── index.html               → Main HTML page for user input and output (step 1)
+│
+└── requirements.txt             → File to specify the Python libraries
+```
 
 ### 📁 Python_Multi-Agent_Augmented_Analytics
 Contains a multi-agent augmented analytics example:
 - 📁 `data`: includes `global-shark-attack.csv`
+- `multi-agent_augmented_analytics_example.ipynb`
 
 ### 📁 Agent_Based_Credit_Risk_Modeling
 Includes Python notebooks and implementations for agent-based modeling in the context of credit risk:
