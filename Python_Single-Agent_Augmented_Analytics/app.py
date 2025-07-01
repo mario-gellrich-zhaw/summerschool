@@ -47,7 +47,7 @@ def index():
         os.remove("./static/graphic.png")
 
     columns = ['Date','Year','Type','Country','Area','Location','Activity',
-               'Name','Sex','Age','Injury','Time','Species']
+               'Name','Sex','Age','Injury','Fatal', 'Time','Species']
     data = pd.read_csv("./data/global-shark-attack.csv", sep=";")[columns]
 
     data_struct_desc = f"Columns: {list(data.columns)}\n\n"
@@ -121,7 +121,7 @@ def index():
 def data_page():
     try:
         columns = ['Date','Year','Type','Country','Area','Location','Activity',
-            'Name','Sex','Age','Injury','Time','Species']
+            'Name','Sex','Age','Injury','Fatal', 'Time','Species']
         data = pd.read_csv("./data/global-shark-attack.csv", sep=";")[columns]
         sample = data.head(10).to_html(classes="data", index=False)
     except Exception as e:
