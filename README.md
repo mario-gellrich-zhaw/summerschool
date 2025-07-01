@@ -13,19 +13,19 @@ Hands-on exploration with local LLMs using the Ollama framework:
 ### 📁 Python_Single-Agent_Augmented_Analytics
 Focused on single-agent analytic workflows:
 
-**Minimal project structure:**
+**Proposed minimal project structure:**
 
 ```bash
 project/
 │
 ├── .devcontainer/
-│    └── devcontainer.json       → Configuration file for setting up the Dev Container
+│    ├── devcontainer.json       → Configuration file for setting up the Dev Container
+│    └── setup.sh                → Setup script for the installation of Ollama
 │
 ├── app.py                       → The main app file
 ├── Procfile                     → Configuration file for deployment (e.g. on Koyeb)
 ├── data/
-│   ├── global-shark-attack.csv  → .csv file with car data
-│   └── credentials.json         → JSON file storing the OpenAI API key
+│   └── global-shark-attack.csv  → .csv file with car data
 │
 ├── static/
 │   ├── css/
@@ -35,7 +35,10 @@ project/
 ├── templates/
 │   └── index.html               → Main HTML page for user input and output (step 1)
 │
+├── credentials.json             → JSON file storing the OpenAI API key
 └── requirements.txt             → File to specify the Python libraries
+
+
 ```
 
 ### 📁 Python_Multi-Agent_Augmented_Analytics
