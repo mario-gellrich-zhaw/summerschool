@@ -10,10 +10,15 @@ Hands-on exploration with local LLMs using the Ollama framework:
 - `ollama_llms.ipynb`
 - `EXERCISES.txt`: Supplementary tasks
 
-### 📁 Python_Single-Agent_Augmented_Analytics
+### 📁 Python_Multi-Agent_Augmented_Analytics
+Contains a multi-agent augmented analytics example:
+- 📁 `data`: includes `global-shark-attack.csv`
+- `multi-agent_augmented_analytics_example.ipynb`
+
+### 📁 Python_Augmented_Analytics_Application
 Focused on single-agent analytic workflows:
 
-**Proposed minimal project structure:**
+**Proposed project structure:**
 ```bash
 project/
 │
@@ -40,11 +45,6 @@ project/
 
 
 ```
-
-### 📁 Python_Multi-Agent_Augmented_Analytics
-Contains a multi-agent augmented analytics example:
-- 📁 `data`: includes `global-shark-attack.csv`
-- `multi-agent_augmented_analytics_example.ipynb`
 
 ### 📁 Agent_Based_Credit_Risk_Modeling
 Includes Python notebooks and implementations for agent-based modeling in the context of credit risk:
