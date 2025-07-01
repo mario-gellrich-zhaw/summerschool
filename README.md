@@ -12,13 +12,14 @@ Hands-on exploration with local LLMs using the Ollama framework:
 
 ### 📁 Python_Single-Agent_Augmented_Analytics
 Focused on single-agent analytic workflows:
-- `app_step_01.py`: Main application script
+- `app.py`: Main application script
 - `Slides_*.pdf`: Presentation slides
-- 📁 `data`, `static`, `templates`: Supporting folders
+- 📁 `data`: includes `global-shark-attack.csv`
+- 📁 `static`, `templates`: Supporting folders
 
 ### 📁 Python_Multi-Agent_Augmented_Analytics
 Contains a multi-agent augmented analytics example:
-- 📁 `data`: includes `autoscout24_data.csv`
+- 📁 `data`: includes `global-shark-attack.csv`
 
 ### 📁 Agent_Based_Credit_Risk_Modeling
 Includes Python notebooks and implementations for agent-based modeling in the context of credit risk:
