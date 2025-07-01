@@ -46,7 +46,9 @@ def index():
     if os.path.exists("./static/graphic.png"):
         os.remove("./static/graphic.png")
 
-    data = pd.read_csv("./data/autoscout24_data.csv")
+    columns = ['Date','Year','Type','Country','Area','Location','Activity',
+               'Name','Sex','Age','Injury','Time','Species']
+    data = pd.read_csv("./data/global-shark-attack.csv", sep=";")[columns]
 
     data_struct_desc = f"Columns: {list(data.columns)}\n\n"
     data_struct_desc += f"Data types:\n{data.dtypes}\n\n"
@@ -57,9 +59,10 @@ def index():
 
         prompt_for_gpt = (
             "You have a pandas DataFrame called 'data' "
-            "loaded from './data/autoscout24_data.csv'. "
+            "loaded from './data/global-shark-attack.csv' with sep=';'. "
             "Here is the structure of the DataFrame:\n\n"
             f"{data_struct_desc}\n\n"
+            f"Use only the columns provided in {data_struct_desc}.\n\n"
             "Please write Python code that works with this DataFrame.\n\n"
             f"User Prompt: {user_prompt}"
         )
@@ -117,7 +120,9 @@ def index():
 @app.route("/data")
 def data_page():
     try:
-        data = pd.read_csv("./data/autoscout24_data.csv")
+        columns = ['Date','Year','Type','Country','Area','Location','Activity',
+            'Name','Sex','Age','Injury','Time','Species']
+        data = pd.read_csv("./data/global-shark-attack.csv", sep=";")[columns]
         sample = data.head(10).to_html(classes="data", index=False)
     except Exception as e:
         sample = f"<p>Error loading data: {e}</p>"
@@ -126,7 +131,7 @@ def data_page():
 
 @app.route("/questions")
 def example_question():
-    example_prompt = "What is the average price of cars by fuel type?"
+    example_prompt = "Which species of shark is the most common?"
     return render_template("questions.html", prompt_example=example_prompt)
 
 
