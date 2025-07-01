@@ -13,9 +13,9 @@ wifi_access.txt
 # Ignore .db files
 *.db
 
-# Ignore results .ipynb files
-# Agent_Based_Credit_Risk_Modeling/agent_based_model_credit_risk.ipynb
-multi-agent_augmented_analytics_example.ipynb
+# Ignore results folders
+Python_Multi-Agent_Augmented_Analytics/
+Python_Single-Agent_Augmented_Analytics/
 
 # Ignore participants.xlsx
 participants.xlsx
