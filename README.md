@@ -15,7 +15,6 @@ Focused on single-agent analytic workflows:
 - `app_step_01.py`: Main application script
 - `Slides_*.pdf`: Presentation slides
 - 📁 `data`, `static`, `templates`: Supporting folders
-- `tiny_llm_next_word_prediction.ipynb`: Notebook for LLM-based prediction
 
 ### 📁 Python_Multi-Agent_Augmented_Analytics
 Contains a multi-agent augmented analytics example:
