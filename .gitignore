@@ -23,20 +23,6 @@ participants.xlsx
 # Credentials
 credentials.json
 
-# Application - related files
-# app_step_01.py
-app_step_02.py
-app_step_03.py
-app_step_04.py
-
-# index.html
-# index_step_01.html
-index_step_02.html
-index_step_03.html
-index_step_04.html
-questions.html
-data.html
-
 # Registrations
 Summer_School_2025_Registrations.xlsx
 SS2025_Agenda.pdf
