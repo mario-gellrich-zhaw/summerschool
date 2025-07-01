@@ -32,9 +32,9 @@ project/
 |   └── graphic.png              → graphic.png (placeholder, will dynamically be overwritten)
 │   
 ├── templates/
-│   └── index.html               → Main HTML page for user input and output (step 1)
+│   └── index.html               → Main HTML page for user input and output
 │
-├── credentials.json             → JSON file storing the OpenAI API key
+├── credentials.json             → JSON file storing the OpenAI API key (provided in class)
 └── requirements.txt             → File to specify the Python libraries
 
 
