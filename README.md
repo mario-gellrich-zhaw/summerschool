@@ -30,7 +30,7 @@ project/
 ├── app.py                       → The main app file
 ├── Procfile                     → Configuration file for deployment (e.g. on Koyeb)
 ├── data/
-│   └── global-shark-attack.csv  → .csv file with car data
+│   └── global-shark-attack.csv  → .csv file with global shark attack data
 │
 ├── static/
 │   ├── css/
