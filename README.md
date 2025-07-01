@@ -18,6 +18,7 @@ Focused on single-agent analytic workflows:
 project/
 │
 ├── .devcontainer/
+│    ├── config.yaml             → Configuration file for the Continue application
 │    ├── devcontainer.json       → Configuration file for setting up the Dev Container
 │    └── setup.sh                → Setup script for the installation of Ollama
 │
