@@ -1,18 +1,20 @@
 body {
-    background-color: #121212;
-    color: white;
+    background-color: white;
+    color: #002366; /* dark blue */
     font-family: Arial, sans-serif;
 }
+
 h1 {
     font-family: Arial, sans-serif;
     font-size: 22px;
-    color: white;
+    color: #002366;
     text-align: left;
     margin-top: 20px;
 }
+
 .button {
-    background-color: greenyellow;
-    color: #121212;
+    background-color: #002366;
+    color: white;
     border: none;
     padding: 10px 15px;
     text-align: center;
@@ -23,22 +25,26 @@ h1 {
     cursor: pointer;
     border-radius: 4px;
 }
+
 textarea {
-    background-color: rgb(46, 46, 46);
-    color: rgb(198, 202, 192);
+    background-color: #f5f5f5;
+    color: #002366;
     font-size: 14px;
     width: 80%;
     max-width: 800px;
     box-sizing: border-box;
+    border: 1px solid #ccc;
 }
+
 label {
-    color: white;
+    color: #002366;
     margin-bottom: 0px;
     display: block;
 }
+
 .sidebar {
     width: 200px;
-    background-color: #1f1f1f;
+    background-color: #002366;
     color: white;
     height: 100vh;
     padding-top: 20px;
@@ -49,6 +55,7 @@ label {
     flex-direction: column;
     align-items: center;
 }
+
 .sidebar a {
     display: block;
     color: white;
@@ -58,41 +65,49 @@ label {
     text-align: center;
     transition: background-color 0.2s ease;
 }
+
 .sidebar a:hover {
-    background-color: #333;
+    background-color: #004080;
 }
+
 .main-content {
     margin-left: 200px;
     padding: 20px;
 }
+
 table {
     width: 95%;
     border-collapse: collapse;
-    color: #FFFFFF;
-    background-color: #333;
+    color: #002366;
+    background-color: #f0f8ff;
     font-size: 9px;
     margin-left: 0px;
 }
+
 th, td {
     padding: 4px;
-    border: 0.5px solid #D3D3D3;
+    border: 0.5px solid #002366;
     text-align: left;
 }
+
 th {
-    background-color: #444;
-    color: #FFFFFF;
+    background-color: #002366;
+    color: white;
 }
+
 .query-list {
     list-style-type: none;
     padding: 0;
     width: 100%;
     max-width: 90%;
 }
+
 .query-list li {
     margin: 10px 0;
     padding: 5px;
-    background-color: #333;
-    border: 1px solid #FFFFFF;
+    background-color: #e6f0ff;
+    border: 1px solid #002366;
     border-radius: 5px;
     font-size: 16px;
+    color: #002366;
 }

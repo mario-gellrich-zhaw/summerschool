@@ -23,6 +23,10 @@
             <label for="prompt">Enter your prompt:</label><br>
             <textarea name="prompt" id="prompt" rows="8">{{ prompt or '' }}</textarea><br><br>
             <button type="submit" class="button">Submit</button>
+            <img id="shark-image"
+                src="{{ url_for('static', filename='Types-of-Sharks.jpg') }}"
+                alt="Shark"
+                style="width: 80%; max-width: 700px; margin-top: 10px; display: block; object-fit: cover;">
         </form>
 
         {% if gpt_response %}
