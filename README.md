@@ -14,7 +14,6 @@ Hands-on exploration with local LLMs using the Ollama framework:
 Focused on single-agent analytic workflows:
 
 **Proposed minimal project structure:**
-
 ```bash
 project/
 │
