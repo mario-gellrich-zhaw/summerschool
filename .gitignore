@@ -14,8 +14,7 @@ wifi_access.txt
 *.db
 
 # Ignore results folders
-Python_Multi-Agent_Augmented_Analytics/
-Python_Single-Agent_Augmented_Analytics/
+Python_Augmented_Analytics_Application/
 
 # Ignore participants.xlsx
 participants.xlsx
