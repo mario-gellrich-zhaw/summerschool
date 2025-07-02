@@ -42,8 +42,6 @@ project/
 │
 ├── credentials.json             → JSON file storing the OpenAI API key (provided in class)
 └── requirements.txt             → File to specify the Python libraries
-
-
 ```
 
 ### 📁 Agent_Based_Credit_Risk_Modeling
