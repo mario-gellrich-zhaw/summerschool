@@ -92,10 +92,18 @@ This structure allows participants to navigate easily between course materials, 
    pkill -f ollama
    ```
 
-## Sync Origin with Upstream
+## Git/GitHub
+
+**Check remote settings**
+```bash
+# Shows the URLs of the remote repos associated with your local Git repo
+git remote -v
+```
+
+**Sync origin with upstream**
 
 ```bash
-# Option (1): Sync your fork/clone to exactly match the upstream (your local changes may be overwritten)
+# Option (1): Sync your fork/clone to exactly match the upstream (your local changes will be overwritten)
 git fetch upstream
 git checkout master
 git reset --hard upstream/master
@@ -106,4 +114,16 @@ git fetch upstream
 git checkout master
 git merge upstream/master
 git push origin master
+```
+
+**Remove a file from the GitHub repository**
+```bash
+# Remove the file from the Git index
+git rm --cached <file-path>
+
+# Commit the change
+git commit -m "Remove <file-path> from repository but keep it locally"
+
+# Push the changes to GitHub
+git push origin <branch-name>
 ```
