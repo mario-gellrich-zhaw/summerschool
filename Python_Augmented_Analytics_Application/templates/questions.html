@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Overview</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="sidebar">
+        <a href="/" title="Home">
+            <i class="fas fa-home" style="font-size: 1.0em;"></i>
+        </a>
+        <a href="/data">Data</a>
+        <a href="/questions">Example Questions</a>
+    </div>
+        <div class="main-content">
+            <h2>Example Questions (Data Insights)</h2>
+            <ul class="query-list">
+                <li>Provide a summary statistic of all numerical data such as age and year!</li>
+                <li>List the top 5 most frequent shark species involved in attacks!</li>
+                <li>Provide a pivot table with the number of attacks by type and country!</li>
+                <li>What are the top 5 activities people were doing during shark attacks?</li>
+            </ul>
+            <h2>Example Questions (Graphics)</h2>
+            <ul class="query-list">
+                <li>Show a histogram of victim ages!</li>
+                <li>Create a horizontal bar chart showing top 10 countries by number of attacks!</li>
+                <li>Plot the distribution of shark attacks by type (Unprovoked, Provoked, etc.) in a pie chart!</li>
+                <li>Show a horizontal bar chart of the number of attacks by the top 5 most activities!</li>
+            </ul>
+            <h2>Example Questions (Machine-Learning)</h2>
+            <ul class="query-list">
+                <li>Use k-means clustering based on the variables age and year (NAs removed) to find groups of shark attack victims.</li>
+                <li>Create a random forest model to predict the type of attack (target) based on country, activity, age, and sex.</li>
+                <li>Fit a logistic regression model to classify the type of attack (target) by age, and sex.</li>
+                <li>Fit a model to predict the two species 'Tiger shark' or 'Bull shark' based on country, activity, age, and sex.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
